@@ -1,4 +1,8 @@
-# User State and Account Management
+---
+sidebar_position: 2
+---
+
+# (Task 1) User State and Account Management
 
 ## State Transitions
 
@@ -8,20 +12,25 @@ This diagram shows the different stages a user can go through in the system, fro
 
 ```mermaid
 stateDiagram
-    [*] --> Guest: Initial State
+    [*] --> Guest: Initial Registration
     Guest --> Basic: KYC Approved
-    Basic --> Advanced: Promotion
-    Advanced --> Basic: Demotion
-    Basic --> Guest: Demotion
-    Company --> Advanced: Promotion
-    Advanced --> Company: Promotion
     Guest --> Idle: Limits Exceeded
-    Idle --> [*] : Reactivation
+
+    Basic --> Advanced: Promotion
+    Basic --> Idle: Limits Exceeded
+  
+    Company --> Advanced: Demotion
+      
+    Advanced --> Company: Promotion
+    Advanced --> Basic: Demotion
+
+    Idle --> [*] : Reactivation Requested
 ```
 
 ## State Descriptions
 
-This diagram outlines the different types of user accounts in the system and their associated limitations. Each user type has specific restrictions on usage, such as time limits and allowed operations. Understanding these different user types and their capabilities is crucial for managing user access and ensuring a smooth user experience.
+This diagram outlines the different types of user accounts in the system and their associated limitations. 
+Each user type has specific restrictions on usage, such as time limits and allowed operations.
 
 **Diagram 2: State Descriptions**
 

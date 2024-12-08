@@ -50,32 +50,10 @@ export default function Home() {
       <main className={clsx('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">
-            <Translate>Welcome to the Nimble SRT Prometheus Exporter Documentation</Translate>
+          <p><Translate>👋 Hey there!</Translate></p>  
+          <p><Translate>⬆️ Hit that button above to see the docs! 🚀</Translate></p>
           </h1>
-          <p className="hero__subtitle">
-            <Translate>
-              Your go-to guide for understanding and using the Nimble SRT Prometheus Exporter.
-              Supporting both English and Russian languages.
-            </Translate>
-          </p>
           <div className={styles.features}>
-            <section>
-              <h2>
-                <Translate>About the Project</Translate>
-              </h2>
-              <p>
-              <Translate>
-                  This is primarily a study documentation project created to demonstrate the use of
-                  Docusaurus for building multilingual documentation websites.
-                  </Translate>
-              </p>
-            </section>
-
-            <section>
-              <p>
-               <a href="https://docusaurus.io" target="_blank" rel="noopener noreferrer">Docusaurus</a>
-              </p>
-            </section>
           </div>
         </div>
       </main>

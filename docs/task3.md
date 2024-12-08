@@ -1,4 +1,8 @@
-# Managing Service Plans for Customers
+---
+sidebar_position: 3
+---
+
+# (Task 3) Managing Service Plans for Customers
 
 Plans offer customers a variety of service options defined within a preconfigured framework.
 

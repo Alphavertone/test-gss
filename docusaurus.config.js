@@ -85,7 +85,7 @@ const config = {
             label: 'Documentation',
           },
           {
-            label: `API`,
+            label: `(Task 2) API`,
             to: `api/`
           },
         ],
