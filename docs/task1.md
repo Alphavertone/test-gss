@@ -16,13 +16,13 @@ stateDiagram
     Guest --> Basic: KYC Approved
     Guest --> Idle: Limits Exceeded
 
-    Basic --> Advanced: Promotion
+    Basic --> Advanced
     Basic --> Idle: Limits Exceeded
   
-    Company --> Advanced: Demotion
+    Company --> Advanced
       
-    Advanced --> Company: Promotion
-    Advanced --> Basic: Demotion
+    Advanced --> Company
+    Advanced --> Basic
 
     Idle --> [*] : Reactivation Requested
 ```
